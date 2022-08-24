@@ -1,0 +1,9 @@
+.inline-calendar-card {
+    width: 450px;
+
+    ::ng-deep {
+        .mat-calendar-body-disabled {
+            cursor: not-allowed;
+        }
+    }
+}

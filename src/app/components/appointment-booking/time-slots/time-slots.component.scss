@@ -1,0 +1,27 @@
+.time-slot {
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-data {
+        border: 1px solid #473757;
+        background-color: #473757;
+        color: white;
+        margin: 10px;
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+            color: #473757;
+        }
+    }
+}
+
+.no_data_found {
+    width: 100%;
+}

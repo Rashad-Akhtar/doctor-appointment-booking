@@ -1,0 +1,13 @@
+<div class="appointment-container">
+  <div class="row">
+    <div class="col-md-5 calendar-container">
+      <p class="calendar-heading">Select Date For Appointment</p>
+      <app-calendar-view [availableDayNumbers]="availableDayNumbers"></app-calendar-view>
+    </div>
+    <div class="col-md-6 timings-container">
+       <p class="timings-heading">Available Time Slots</p>
+       <app-time-slots [timeObject]="timings" 
+                       [visitDuration]="visitDuration" ></app-time-slots>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div mat-dialog-title class="dialog__header">
+    <h5 mat-dialog-title class="dialog__header-title">
+        Book Appointment
+    </h5>
+    <button class="button button--link dialog__header-button" (click)="closeDialog()">
+        <i class="material-icons">close</i>
+    </button>
+</div>
+
+<div mat-dialog-content class="dialog__content">
+    <div class="form-container">
+        <label class="form-container__label" for="name">Name</label>
+
+        <input type="text" id="name" class="form-container__control"
+               placeholder="Enter Your Name">
+    </div>
+    <div class="form-container" >
+        <label class="form-container__label" for="email">Email</label>
+        <input type="text" id="email" class="form-container__control"
+               placeholder="Enter Email Address">
+    </div>
+    <div class="form-container" >
+        <label class="form-container__label" for="phone">Phone</label>
+        <input type="text" id="phone" class="form-container__control"
+               placeholder="Enter Phone Number">
+    </div>
+    <div class="form-container" >
+        <label class="form-container__label" for="address">Address</label>
+        <input type="text" id="address" class="form-container__control"
+               placeholder="Enter Your Address">
+    </div>
+    <div class="form-container" >
+        <label class="form-container__label" for="reason">Visit Reason</label>
+        <textarea class="form-container__control"></textarea>
+    </div>
+    
+</div>
+
+<div mat-dialog-actions class="dialog__footer">
+    <button class="submit-btn">
+      Submit
+    </button>
+</div>

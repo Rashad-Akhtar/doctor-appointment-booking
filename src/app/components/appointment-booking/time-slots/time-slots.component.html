@@ -1,0 +1,13 @@
+<ng-container *ngIf="!timings.length">
+  <img class="no_data_found" src="../../../../assets/images/no_data.png" alt="No Data">
+</ng-container>
+
+<ng-container *ngIf="timings.length">
+    <div class="time-slot-container" [@animate]>
+        <ng-container *ngFor="let time of timings">
+            <div class="time-slot-data" (click)="openModal()">
+                <p class="m-0"> {{ time }} </p>
+            </div>
+        </ng-container>
+    </div> 
+</ng-container>

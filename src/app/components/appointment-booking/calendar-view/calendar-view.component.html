@@ -1,0 +1,6 @@
+<mat-card class="inline-calendar-card">
+    <mat-calendar [(selected)]="selected"
+     [dateFilter] = "selectableDatesFilter"
+     [minDate] ="minDate" 
+     (selectedChange)="dateChange($event)"></mat-calendar>
+</mat-card>

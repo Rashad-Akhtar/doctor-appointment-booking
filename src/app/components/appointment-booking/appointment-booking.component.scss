@@ -1,0 +1,26 @@
+.calendar {
+    &-container {
+      margin: 50px 20px;
+    }
+    &-heading {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        padding-left: 20px;
+        color: #645ce5;
+    }
+}
+
+.timings {
+    &-container {
+        margin: 50px 10px;
+    }
+    &-heading {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        padding-left: 20px;
+        color: #645ce5;
+    }
+}

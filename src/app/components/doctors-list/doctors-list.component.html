@@ -1,0 +1,13 @@
+<div class="list-container">
+   <h2 class="heading" ><u>Doctors List</u></h2> 
+   <div class="row">
+      <ng-container *ngFor="let doctor of doctorsData">
+         <div class="col-md-4 doctor-container">
+            <img class="doctor-image" src="../../../assets/images/dummy_image.jpg" alt="image">
+            <p class="doctor-name"> {{ doctor.name }} </p>
+            <p class="doctor-org"> {{ doctor.org }} </p>
+            <button class="appointment-btn" (click)="redirectToAppointment(doctor)">Book Appointment</button>
+         </div>
+      </ng-container>
+   </div>
+</div>

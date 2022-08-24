@@ -1,0 +1,121 @@
+::ng-deep {
+    .mat-dialog-container {
+        border-radius: 10px;
+        padding: 0 25px;
+    }
+}
+
+.dialog {
+  &__header {
+    box-shadow: 0 20px 25px -10px rgba(19, 34, 64, 0.2);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: black;
+      opacity: 0.8;
+      margin-bottom: 0;
+    }
+    &-button {
+      padding: 0;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      color: black;
+      border: none;
+      background: none;
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__content {
+    text-align: left;
+    padding: 25px 50px;
+    .form-container {
+      margin-bottom: 16px;
+      &__label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+      &__control {
+        background: #dfdfdf;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+        padding: 5px 10px;
+        &::-webkit-input-placeholder {
+          font-size: 12px;
+        }
+        &::-moz-placeholder {
+          font-size: 12px;
+        }
+        &:-moz-placeholder {
+          font-size: 12px;
+        }
+        &:-ms-input-placeholder {
+          font-size: 12px;
+        }
+        &:focus {
+          &::-webkit-input-placeholder {
+            color: black;
+            opacity: 0.4;
+          }
+          &::-moz-placeholder {
+            color: black;
+            opacity: 0.4;
+          }
+          &:-moz-placeholder {
+            color: black;
+            opacity: 0.4;
+          }
+          &:-ms-input-placeholder {
+            color: black;
+            opacity: 0.4;
+          }
+        }
+        &.error {
+          border: 1px solid red;
+        }
+        &-toggle {
+          position: absolute;
+          top: 0;
+          right: 0;
+          i {
+            font-size: 20px;
+            color: #606268;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -20px 25px -10px rgba(19, 34, 64, 0.2);
+    padding: 10px 13px;
+    margin-bottom: 0;
+  }
+}
+
+.submit-btn {
+    width: 160px;
+    height: 40px;
+    border: none;
+    background: #3b81ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
